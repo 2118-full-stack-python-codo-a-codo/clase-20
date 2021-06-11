@@ -29,6 +29,11 @@ def main():
 
     print(myMonth)
 
+    contador = int(input(" ingrese contador hasta: "))
+    counter(contador)
+
+    counterWithFor(contador)
+
 '''
     En otros lenguajes de programacion
     if () {
@@ -37,6 +42,22 @@ def main():
 
     } 
 '''
+
+def counterWithFor(until):
+    '''
+     esta es una function que cuenta hasta until usando
+    '''
+    for counter in range(until): #range(0, until, 1) :
+        print("Mi contador es con un For: ", counter)
+
+def counter(until):
+    '''
+     esta es una function que cuenta hasta until usando while
+    '''
+    counter = 0 # defini un contador
+    while (counter < until): # while chequea que counter sea menor igual a until
+        print("Mi contador es: ", counter)
+        counter +=1
 
 def month(number):
     '''
